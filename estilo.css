@@ -1,0 +1,186 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("http://www.hellosmartblog.com/wp-content/uploads/2016/05/Email.jpeg");
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.logo {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://blog.bsource.com.br/assets/img/logo-bsource.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  /*overflow: hidden;*/
+}
+
+.contatoWrapper {
+  width: 100%;
+  max-width:400px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  height: 105px;
+}
+
+.contatoItemE {
+  position: absolute;
+  left: 0px;
+  width: 50%;
+}
+
+.contatoItemD {
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  opacity: 0.85;
+  background: linear-gradient(-90deg, #16181E 15%, #16181E 752%);
+  /*background: linear-gradient(-210deg, transparent 0%, #16181E 0%, #16181E 70%, transparent 50%, transparent 100%);*/
+  transition: all 0.5s cubic-bezier(0.67, 0, 0.3, 1) 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  /*transform:rotate(50deg);*/
+  padding: 1rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.content h1 {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.content a {
+  color: rgba(255, 255, 255, 1);
+  display: inline-block;
+  padding: 2.1% 4%;
+  overflow: hidden;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.btn1 {
+  border: 1px solid rgba(255, 255, 255, 1);
+  ;
+  transition: .2s ease-in-out;
+}
+
+.btn1:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+  ;
+  background-color: rgba(255, 255, 255, 1);
+  ;
+  color: black;
+  transition: .2s ease-in-out;
+}
+
+.btn2 {
+  margin-left: 3%;
+  background: linear-gradient(to right, #252AFF 0%, #7180bb 100%);
+  border-image: linear-gradient(to right, #252AFF 0%, #7180bb 100%);
+  border-image-slice: 1;
+  border-width: 1px;
+  border-style: solid;
+  transition: .2s ease-in-out
+}
+
+.btn2:hover {
+  background: none;
+  border-image: linear-gradient(to bottom right, #252AFF 0%, #25FFED 100%);
+  border-image-slice: 1;
+  border-width: 1px;
+  border-style: solid;
+  transition: .2s ease-in-out
+}
+
+@media screen and (max-width: 355px) {
+  .contatoWrapper {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+  }
+  .contatoItemE {
+    position: static;
+    left:auto;
+    width: 100%;
+  }
+  .contatoItemD {
+    position: static;
+    left:auto;
+    width: 100%;
+  }
+}
+
+.content {
+  /*transform:rotate(50deg);*/
+  padding: 1rem 1.4rem;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  /*margin: 5px 0px;*/
+  /*line-height: 1.2;*/
+}
+
+.wrapper {
+  opacity: 0.85;
+  background: linear-gradient(-90deg, #16181E 15%, #16181E 752%);
+  transition: all 0.5s cubic-bezier(0.67, 0, 0.3, 1) 1s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+}
+
+@media screen and (min-width: 356px) and (max-width: 650px) {
+  .content {
+    /*transform:rotate(50deg);*/
+    padding: 1rem 1.4rem;
+  }
+  .wrapper {
+    transition: all 0.5s cubic-bezier(0.67, 0, 0.3, 1) 1s;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
